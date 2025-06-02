@@ -1,0 +1,134 @@
+body {
+    background-color: #FFC5C5;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column; 
+}
+
+.tela-inicial {
+    text-align: center;
+}
+
+.titulo {
+    color: #8B0A1A; 
+    margin-bottom: 20px;
+    animation: anima-titulo 2s infinite;
+}
+
+@keyframes anima-titulo {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#iniciar-jogo {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #8B0A1A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#iniciar-jogo:hover {
+    background-color: #6F0A14;
+}
+
+.container {
+    width: 600px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    display: none;
+}
+
+#palavra {
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#enviar {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #8B0A1A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#enviar:hover {
+    background-color: #6F0A14;
+}
+
+.correta {
+    background-color: green;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.presente {
+    background-color: yellow;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.ausente {
+    background-color: gray;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+#tentativas {
+    margin-top: 15px;
+    color: #8B0A1A;
+}
+
+#resultado {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #8B0A1A;
+}
+
+#cores-info {
+    margin-top: 20px;
+}
+
+.criador {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: #8B0A1A;
+}
+
+#confetes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}

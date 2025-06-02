@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tela-inicial" id="tela-inicial">
+        <h1 class="titulo">Jogo de Adivinhação</h1>
+        <button id="iniciar-jogo">Iniciar Jogo</button>
+    </div>
+    <div class="container" id="jogo-container" style="display: none;">
+        <h1 class="titulo">Jogo de Adivinhação</h1>
+        <p id="palavra-info"></p>
+        <input id="palavra" type="text" placeholder="Digite uma palavra">
+        <button id="enviar">Enviar</button>
+        <div id="feedback"></div>
+        <div id="tentativas"></div>
+        <div id="resultado"></div>
+        <div id="cores-info"></div>
+            <span class="correta">Verde</span> - Letra correta na posição correta
+            <br>
+            <span class="presente">Amarelo</span> - Letra presente, mas na posição errada
+            <br>
+            <span class="ausente">Cinza</span> - Letra ausente na palavra
+        </div>
+        <canvas id="confetes" width="600" height="600"></canvas>
+    </div>
+    <div class="criador">Criado por Hellen</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
