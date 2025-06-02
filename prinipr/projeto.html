@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jogo de Adivinhação + Menu</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- MENU -->
+    <div id="menu-container" class="container">
+        <h1 class="titulo">Menu do Jogo</h1>
+        <button id="btn-adicionar">Adicionar jogador/time</button>
+        <button id="btn-registrar">Registrar partida</button>
+        <button id="btn-ranking">Ver ranking</button>
+        <button id="btn-historico">Ver histórico de partidas</button>
+        <button id="btn-remover">Remover jogador (opcional)</button>
+        <button id="btn-jogar" style="margin-top: 20px;">Jogar o Jogo de Adivinhação</button>
+        <div id="menu-output" style="margin-top: 20px; text-align: left; white-space: pre-wrap; color: #8B0A1A;"></div>
+    </div>
+
+    <!-- TELA INICIAL DO JOGO -->
+    <div id="tela-inicial" class="container" style="display: none; text-align: center;">
+        <h1 class="titulo">Jogo de Adivinhação</h1>
+        <p id="palavra-info"></p>
+        <button id="btn-iniciar-jogo" style="margin-bottom: 20px;">Iniciar Jogo</button>
+        <button id="btn-voltar-menu-inicial">Voltar ao Menu</button>
+    </div>
+
+    <!-- JOGO -->
+    <div id="jogo-container" class="container" style="display: none; text-align: center;">
+        <h1 class="titulo">Jogo de Adivinhação</h1>
+        <input id="palavra" type="text" placeholder="Digite uma palavra" autocomplete="off" />
+        <button id="enviar">Enviar</button>
+        <div id="feedback"></div>
+        <div id="tentativas"></div>
+        <div id="resultado"></div>
+        <div id="cores-info" style="margin-top: 20px;">
+            <span class="correta">Verde</span> - Letra correta na posição correta<br />
+            <span class="presente">Amarelo</span> - Letra presente, mas na posição errada<br />
+            <span class="ausente">Cinza</span> - Letra ausente na palavra
+        </div>
+        <canvas id="confetes" width="600" height="600"></canvas>
+        <button id="btn-voltar-menu-jogo" style="margin-top: 20px;">Voltar ao Menu</button>
+    </div>
+
+    <div class="criador">Criado por Hellen & Haziel</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
